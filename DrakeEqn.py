@@ -31,15 +31,15 @@ def Drake():
     print "Okay, now I need your input."
     R = 7.0
     p = .40
-    n = float(raw_input("n: "))
+    n = float(raw_input("How many planets per star do you think can support life: "))
     f = .13
-    i_in = float(raw_input("i (do not include %): "))
+    i_in = float(raw_input("""Of the 13% of planets that develop life, 
+what percentage do you think have intelligent life? (do not include %): """))
     i = i_in/100
-    c_in = float(raw_input("c (do not include %): "))
+    c_in = float(raw_input("""What percentage of those do you think can
+communicate with us? (do not include %): """))
     c = c_in/100
-    L = float(raw_input("L: "))
+    L = float(raw_input("What number of years do you think civilizations last: "))
     eqn = R*p*n*f*i*c*L
-    print "From your values, we would expect about " , eqn, " civilizations exist."
-    
-    
-    
+    print """From your values, we would expect about """ , eqn, """ potentitally 
+detectable civilizations exist in our galaxy."""
